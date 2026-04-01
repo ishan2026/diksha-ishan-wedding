@@ -24,6 +24,7 @@ const PhotoStory: React.FC = () => {
                 alt="Little Diksha" 
                 className="w-full h-full object-cover transition-all duration-500"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-wedding-gold text-wedding-maroon px-4 py-1 rounded-full font-display font-bold text-sm shadow-md">
@@ -57,6 +58,7 @@ const PhotoStory: React.FC = () => {
                 alt="Little Ishan" 
                 className="w-full h-full object-cover transition-all duration-500"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-wedding-gold text-wedding-maroon px-4 py-1 rounded-full font-display font-bold text-sm shadow-md">
@@ -79,6 +81,7 @@ const PhotoStory: React.FC = () => {
               alt="Diksha and Ishan" 
               className="w-full h-full object-cover object-[center_20%]"
               referrerPolicy="no-referrer"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-wedding-maroon/80 to-transparent flex items-end justify-center p-6">
               <p className="font-calligraphy text-wedding-gold text-4xl">From childhood dreams to forever</p>
