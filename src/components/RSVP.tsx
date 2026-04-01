@@ -26,6 +26,7 @@ const RSVP: React.FC = () => {
                 alt="ShivJi and ParvatiJi" 
                 className="w-full h-full object-cover md:object-contain opacity-40 group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-wedding-maroon/80 via-wedding-maroon/40 to-wedding-maroon/80" />
             </div>
@@ -55,7 +56,7 @@ const RSVP: React.FC = () => {
 
               <div className="pt-4">
                 <p className="font-calligraphy text-wedding-gold text-4xl drop-shadow-lg">
-                  With Love, Mishra and Sharma Family
+                  With Love, Diksha & Ishan
                 </p>
               </div>
             </div>
