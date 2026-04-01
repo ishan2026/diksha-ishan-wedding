@@ -61,6 +61,7 @@ const Timeline: React.FC = () => {
                       alt={event.title} 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-black/50" />
                   </div>
