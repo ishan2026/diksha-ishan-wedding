@@ -55,7 +55,7 @@ const RSVP: React.FC = () => {
 
               <div className="pt-4">
                 <p className="font-calligraphy text-wedding-gold text-4xl drop-shadow-lg">
-                  With Love, Diksha & Ishan
+                  With Love, Mishra and Sharma Family
                 </p>
               </div>
             </div>
