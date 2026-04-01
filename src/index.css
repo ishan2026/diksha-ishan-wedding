@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Cinzel:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-calligraphy: "Great Vibes", cursive;
+  --font-display: "Cinzel", serif;
+
+  --color-wedding-maroon: #800000;
+  --color-wedding-red: #D40000;
+  --color-wedding-gold: #FFD700;
+  --color-wedding-cream: #FFFDD0;
+  --color-wedding-ivory: #FFFFF0;
+}
+
+@layer base {
+  body {
+    @apply bg-wedding-maroon text-wedding-cream font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gold-border {
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .text-shadow-gold {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+}
+
+/* Custom animations for floating elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
